@@ -8,7 +8,6 @@
 </head>
 <body>
     <!--
-    Di 
     Struktur tabel terdiri dua jenis, yaitu:
     |+| Table Simple
     Tabel yang tidak memiliki header pada baris atau kolom.
@@ -20,7 +19,13 @@
     |+| Tag <tr></tr> >> Untuk bagian baris
     |+| Tag <td></td> >> Untuk bagian kolom -->
 
-    <table>
+    <!-- Di dalam tag <table></table> terdapat beberapa atribut, yaitu:
+    |+| border >> mengatur ketebalan garis dan menambahkan pada table. 
+    |+| cellspacing >> mengatur jarak antar cell.
+    |+| cellpadding >> mengatur luas setiap cell. -->
+    
+    <h1><b>Table Simple</b></h1>
+    <table border="5" cellspacing="20" cellpadding="10">
         <tr>
             <td>baris 1 kolom 1</td>
             <td>baris 1 kolom 2</td>
@@ -38,9 +43,34 @@
         </tr>
     </table>
 
+    <br><br>
+
     <!-- Table Complex -->
-    Di dalam tag <table></table> terdapat beberapa tag,yaitu:
+    <!-- Di dalam tag <table></table> terdapat beberapa tag,yaitu:
     |+| Tag <thead></thead> >> untuk membuat baris pada header, dimana dalam tag tersebut terdapat tag <th></th>.
-    |+| Tag <tbody></tbody> >> untuk membuat baris dan kolom. Setiap baris bisa dibuat header menggunakan tag <th></th>. 
+    |+| Tag <tbody></tbody> >> untuk membuat baris dan kolom. Pada tag <tr></tr> di tag <tbody></tbody> dapat ditambahkan tag <th></th>.  -->
+    
+    <h1><b>Table Complex</b></h1>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+            <tr>
+                <th></th>
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>baris 1 kolom 1</td>
+                <td>baris 1 kolom 2</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>baris 2 kolom 1</td>
+                <td>baris 2 kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
