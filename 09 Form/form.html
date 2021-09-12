@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Membuat Form</title>
+</head>
+<body>
+    <!-- Form adalah sebuah elemen pada html yang digunakan untuk mengolah data dari input yang dilakukan oleh user. Tag untuk memanggil forma adalah <form></form>.
+
+    <form>
+        ...
+        Elemen form
+        ...
+    </form>
+
+    Form terdiri dari berapa elemen (Pilihan Pak Sandhika Galih , dari seluruh elemen form),yaitu:
+    |+| Input >> Dimana user bisa menginput sesuatu.
+        Input untuk membuat textfield (input string), radio button, dan lain-lain.
+    |+| Textarea >> Mirip seperti textfied tapi lebih banyak dari 
+        texfield. Digunakan untuk membuat komen atau pesan.
+    |+| Select >> Digunakan untuk membuat dropdown/combobox
+    |+| Button >> Untuk tombol mengirimkan data, reset atau lain-lainnya.
+    |+| Label >> Label untuk menandai sebuha elemen input.
+
+    Untuk memanggil elemen input digunakan tag <input type="">. Atribut type pada input adalah antara lain sebagai berikut:
+    |+| text 
+    |+| password
+    |+| radio atau radio button
+    |+| checkbox
+    |+| Submit >> Seharusnya Tombol tidak dibuat menggunakan tag <input type="">.
+    |+| reset  >> Seharusnya Tombol tidak dibuat menggunakan tag <input type="">.
+    |+| button >> Seharusnya Tombol tidak dibuat menggunakan tag <input type="">. -->
+
+    <h2><u>Membuat Input Text Sederhana</u></h2>
+    <br>    
+
+    <form>
+        <!-- Atribut "for" pada label harus sama dengan atribut input "id" dalam hal penamaan. Misalnya mengetikkan username pada for dan id yang bertujuan menghubungkan antara label dan input. -->
+
+        <label for="username">Username : </label>
+        <input type="text" id="username">
+            <br>
+        <label for="pswd">Password : </label><input type="password" id="pswd">
+            <br>
+        <input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+        <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+            <br>
+        <input type="checkbox" id="membaca"><label for="membaca">membaca</label>
+        <input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+        <input type="checkbox" id="menulis"><label for="menulis">menulis</label>
+            <br>
+        <textarea></textarea>
+            <br>
+        <select>
+            <option>Medan</option>
+            <option>Bandung</option>
+            <option>Papua</option>
+            <option>Semarang</option>
+        </select>
+            <br>
+
+        <!-- Membuat button seperti submit, reset dan button sebaiknya menggunakaan tag <button></button> daripada menggunakan tag <input type="">. -->
+
+        <button type="submit">Kirim!!</button>
+
+    </form>
+
+        <br><br><br><br>
+
+    <h2><u>Membuat Form dengan bantuan tabel</u></h2>
+        <br>
+    for
+</body>
+</html>
