@@ -69,7 +69,7 @@
     <h2><u>Membuat Form dengan bantuan tabel</u></h2>
         <br>
     <form>
-        <table border="1" cellspacing="0" cellpadding="10">
+        <table cellspacing="0" cellpadding="10">
             <tr>
                 <td align="right"><label for="txt">TextField : </label></td>
                 <td align="left"><input type="text" id="txt"></td>
@@ -79,24 +79,36 @@
                 <td align="left"><input type="password" id="pswd2"></td>
             </tr>
             <tr>
-                <td>3 , 1</td>
-                <td>3 , 2</td>
+                <td colspan="2" align="center">
+                    <input type="radio" id="rd1" name="radiobtn"><label for="rd1">Radio 1</label>
+                    <input type="radio" id="rd2" name="radiobtn"><label for="rd2">Radio 2</label>
+                </td>
             </tr>
             <tr>
-                <td>4 , 1</td>
-                <td>4 , 2</td>
+                <td colspan="2" align="center">
+                    <input type="checkbox" id="cb1"><label for="cb1">Check Box 1</label>
+                    <input type="checkbox" id="cb2"><label for="cb2">Check Box 2</label>    
+                </td>
             </tr>
             <tr>
-                <td>5 , 1</td>
-                <td>5 , 2</td>
+                <td align="right"><label for="cBox">Combo Box : </label></td>
+                <td align="left">
+                    <select id="cBox">
+                        <option>Opsi 1</option>
+                        <option>Opsi 2</option>
+                        <option>Opsi 3</option>
+                        <option>Opsi 4</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td align="right"><label for="txArea">TextArea : </label></td>
-                <td align="left"><textarea id="txArea" cols="30" rows="5"></textarea></td>
+                <td align="left"><textarea id="txArea" cols="22" rows="5"></textarea></td>
             </tr>
             <tr>
-                <td>7 , 1</td>
-                <td>7 , 2</td>
+                <td colspan="2" align="center">
+                    <button type="button">Button</button>
+                </td>
             </tr>
         </table>
     </form>
